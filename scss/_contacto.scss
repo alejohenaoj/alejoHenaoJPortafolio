@@ -1,0 +1,92 @@
+main{
+  .contenedorContacto{
+    width: 100%;
+    .contenedorSliderInfo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      .contenedorSliderContacto{
+        display: none;
+      }
+      .infoContacto{
+        width: 100%;
+        max-width: 40rem;
+        .contenedorInfo{
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-around;
+          align-items: center;
+          margin: 1.5rem auto;
+          .tituloH2{
+            font-size: 2rem;
+            color: $grisMedio;
+            text-align: center;
+          }
+          .textoH2{
+            font-size: 1.1rem;
+            color: $grisMedio;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width:960px){
+  main{
+    .contenedorContacto{
+      .contenedorSliderInfo{
+        .contenedorSliderContacto{
+          display: block;
+          width: 40rem;
+          height: 30rem;
+          padding: 3rem 0;
+          overflow: hidden;
+          white-space: nowrap;
+          position: relative;
+          &:hover .contenedorImgsSlider{
+            animation-play-state: paused;
+          }
+          &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2rem;
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), $grisOscuro);
+            content: '';
+            z-index: 5;
+          }
+          &::after{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2rem;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), $grisOscuro);
+            content: '';
+            z-index: 5;
+          }
+          .contenedorImgsSlider{
+            animation: 35s slide infinite linear;
+            display: inline-block;
+            .imgSliderContacto{
+              margin: 0 1rem;
+              height: 30rem;
+            }
+          }
+          @keyframes slide {
+            from{
+              transform: translateX(0);
+            }
+            to{
+              transform: translateX(-100%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+main{
+  .contenedorProyectosIndex{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .tituloH2{
+      font-family: $gara;
+      font-size: 2rem;
+      color: $grisMedio;
+      text-align: center;
+    }
+    .contenedorSeparador{
+      width: 70%;
+      max-width: 23rem;
+      margin: 0 auto;
+      .imgSeparador{
+        width: 100%;
+      }
+    }
+    .contenedorColumnasProyectosIndex{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .columnaProyectosIndex{
+        padding: 1.5rem 0.5rem;
+        max-width: 18rem;
+        .tarjetaProyectoIndex{
+          overflow: hidden;
+          position: relative;
+          margin-bottom: 1.5rem;
+          .imgTarjetaProyectoIndex{
+            width: 100%;
+            border-radius: 0.3rem;
+            object-fit: cover;
+          }
+          .hoverImgTarjetaProyectoIndex{
+            width: 100%;
+            height: 99.1%;
+            background-color: $grisOscuroT;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            border-radius: 0.3rem;
+            display: flex;
+            align-items: end;
+            transition: 1s;
+            .contenedorInfoTarjetaProyectoIndex{
+              .tituloH3{
+                font-size: 1.5rem;
+                color: $grisMClaro;
+              }
+              .textoH3{
+                color: $grisMClaro;
+                font-size: 1.1rem;
+                font-weight: 500;
+              }
+              .paddingLeft2Rem{
+                padding-left: 2rem;
+              }
+              .paddingBottom2Rem{
+                padding-bottom: 2rem;
+              }
+            }
+          }
+        }
+        .stopMarginBottom{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width:960px){
+  main{
+    .contenedorProyectosIndex{
+      .contenedorColumnasProyectosIndex{
+        flex-wrap: nowrap;
+        .columnaProyectosIndex{
+          max-width: 20rem;
+          .tarjetaProyectoIndex{
+            &:hover .hoverImgTarjetaProyectoIndex{
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

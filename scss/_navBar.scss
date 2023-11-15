@@ -1,0 +1,96 @@
+header{
+  width: 90%;
+  margin: 0 auto;
+  .contenedorNavBar{
+    margin: 1.5rem auto;
+    position: relative;
+    .contenedorImgLogotipoNavBar{
+      width: 10rem;
+      display: none;
+      .imgLogotipoNavBar{
+        width: 100%;
+      }
+    }
+    .opacidadCero{
+      opacity: 0;
+    }
+    .toggleNavBar{
+      width: 2rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      .imgIconoMenu{
+        width: 100%;
+      }
+    }
+    .contenedorNavBarLista{
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      transform: translateY(-140%);
+      transition: transform 1s;
+      li{
+        list-style-type: none;
+        padding: 1rem 2rem;
+        background-color: $grisMOscuro;
+        border: solid 1px $grisOscuro;
+        a{
+          font-weight: 700;
+          text-decoration: none;
+          color: $grisMedio;
+          text-transform: uppercase;
+          &:focus{
+            color: $grisMClaro;
+            text-decoration: underline;
+          }
+          &.active{
+            color: $grisClaro;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .showContenedorNavBar{
+      transform: translateY(0);
+    }
+  }
+}
+@media screen and(min-width:960px){
+  header{
+    .contenedorNavBar{
+      margin: 0.5rem auto;
+      display: flex;
+      align-items: center;
+      .contenedorImgLogotipoNavBar{
+        display: grid;
+      }
+      .toggleNavBar{
+        display: none;
+      }
+      .contenedorNavBarLista{
+        width: 100%;
+        transform: translateY(0);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: end;
+        li{
+          padding: 0 1rem;
+          background-color: $grisOscuro;
+          a{
+            &:hover{
+              color: $grisMClaro;
+              text-decoration: underline;
+            }
+            &:focus{
+              color: $grisMOscuro;
+            }
+          }
+        }
+      }
+      .justificadoCentro{
+        justify-content: center;
+      }
+    }
+  }
+}

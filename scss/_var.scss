@@ -1,0 +1,51 @@
+/* Escala de grises */
+$grisOscuro: rgb(30, 30, 30);
+$grisMOscuro: rgb(80, 80, 80);
+$grisMedio: rgb(130, 130, 130);
+$grisMClaro: rgb(180, 180, 180);
+$grisClaro: rgb(250, 250, 250);
+
+/* Color Translucido */
+$grisOscuroT: rgba(01, 01, 00, 0.8);
+
+/* Tipografia */
+$gara: 'Cormorant Garamond', serif;
+$pop: 'Poppins', sans-serif;
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Poppins', sans-serif; */
+
+/* breackpoints mediaquery para cel (320-480),
+para tablet (480-960), 
+para pc (960-1024-1328) */
+
+/* Titulos y Textos */
+/* .tituloH1{
+  font-size: 2.5rem;
+  color: $grisMedio;
+  text-align: center;
+}
+.tituloH2{
+  font-size: 2rem;
+  color: $grisMedio;
+  text-align: center;
+}
+.tituloH3{
+  font-size: 1.5rem;
+  color: $grisMedio;
+  text-align: center;
+}
+.textoH3{
+  font-size: 1.1rem;
+  color: $grisMedio;
+  text-align: center;
+} */
+
+/* Separador */
+/* .contenedorSeparador{
+  width: 70%;
+  max-width: 23rem;
+  margin: 0 auto;
+  .imgSeparador{
+    width: 100%;
+  }
+} */

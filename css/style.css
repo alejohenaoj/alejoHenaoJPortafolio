@@ -1,0 +1,917 @@
+/* Escala de grises */
+/* Color Translucido */
+/* Tipografia */
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Poppins', sans-serif; */
+/* breackpoints mediaquery para cel (320-480),
+para tablet (480-960), 
+para pc (960-1024-1328) */
+/* Titulos y Textos */
+/* .tituloH1{
+  font-size: 2.5rem;
+  color: $grisMedio;
+  text-align: center;
+}
+.tituloH2{
+  font-size: 2rem;
+  color: $grisMedio;
+  text-align: center;
+}
+.tituloH3{
+  font-size: 1.5rem;
+  color: $grisMedio;
+  text-align: center;
+}
+.textoH3{
+  font-size: 1.1rem;
+  color: $grisMedio;
+  text-align: center;
+} */
+/* Separador */
+/* .contenedorSeparador{
+  width: 70%;
+  max-width: 23rem;
+  margin: 0 auto;
+  .imgSeparador{
+    width: 100%;
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1e1e1e;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem; }
+
+header {
+  width: 90%;
+  margin: 0 auto; }
+  header .contenedorNavBar {
+    margin: 1.5rem auto;
+    position: relative; }
+    header .contenedorNavBar .contenedorImgLogotipoNavBar {
+      width: 10rem;
+      display: none; }
+      header .contenedorNavBar .contenedorImgLogotipoNavBar .imgLogotipoNavBar {
+        width: 100%; }
+    header .contenedorNavBar .opacidadCero {
+      opacity: 0; }
+    header .contenedorNavBar .toggleNavBar {
+      width: 2rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10; }
+      header .contenedorNavBar .toggleNavBar .imgIconoMenu {
+        width: 100%; }
+    header .contenedorNavBar .contenedorNavBarLista {
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      transform: translateY(-140%);
+      transition: transform 1s; }
+      header .contenedorNavBar .contenedorNavBarLista li {
+        list-style-type: none;
+        padding: 1rem 2rem;
+        background-color: #505050;
+        border: solid 1px #1e1e1e; }
+        header .contenedorNavBar .contenedorNavBarLista li a {
+          font-weight: 700;
+          text-decoration: none;
+          color: #828282;
+          text-transform: uppercase; }
+          header .contenedorNavBar .contenedorNavBarLista li a:focus {
+            color: #b4b4b4;
+            text-decoration: underline; }
+          header .contenedorNavBar .contenedorNavBarLista li a.active {
+            color: #fafafa;
+            text-decoration: underline; }
+    header .contenedorNavBar .showContenedorNavBar {
+      transform: translateY(0); }
+
+@media screen and (min-width: 960px) {
+  header .contenedorNavBar {
+    margin: 0.5rem auto;
+    display: flex;
+    align-items: center; }
+    header .contenedorNavBar .contenedorImgLogotipoNavBar {
+      display: grid; }
+    header .contenedorNavBar .toggleNavBar {
+      display: none; }
+    header .contenedorNavBar .contenedorNavBarLista {
+      width: 100%;
+      transform: translateY(0);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: end; }
+      header .contenedorNavBar .contenedorNavBarLista li {
+        padding: 0 1rem;
+        background-color: #1e1e1e; }
+        header .contenedorNavBar .contenedorNavBarLista li a:hover {
+          color: #b4b4b4;
+          text-decoration: underline; }
+        header .contenedorNavBar .contenedorNavBarLista li a:focus {
+          color: #505050; }
+    header .contenedorNavBar .justificadoCentro {
+      justify-content: center; } }
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  main .contenedorIntro {
+    width: 100%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorIntro .tituloH1 {
+      font-size: 2.5rem;
+      color: #828282;
+      text-align: center; }
+    main .contenedorIntro .opacidadCero {
+      opacity: 0;
+      position: absolute; }
+    main .contenedorIntro .contenedorImgIsologoIntro {
+      width: 90%;
+      max-width: 40rem;
+      margin: 1rem auto; }
+      main .contenedorIntro .contenedorImgIsologoIntro .imgIsologoIntro {
+        width: 100%; }
+    main .contenedorIntro .contenedorSeparador {
+      width: 70%;
+      max-width: 23rem;
+      margin: 0 auto; }
+      main .contenedorIntro .contenedorSeparador .imgSeparador {
+        width: 100%; }
+
+main .contenedorProyectosIndex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  main .contenedorProyectosIndex .tituloH2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: #828282;
+    text-align: center; }
+  main .contenedorProyectosIndex .contenedorSeparador {
+    width: 70%;
+    max-width: 23rem;
+    margin: 0 auto; }
+    main .contenedorProyectosIndex .contenedorSeparador .imgSeparador {
+      width: 100%; }
+  main .contenedorProyectosIndex .contenedorColumnasProyectosIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex {
+      padding: 1.5rem 0.5rem;
+      max-width: 18rem; }
+      main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1.5rem; }
+        main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex .imgTarjetaProyectoIndex {
+          width: 100%;
+          border-radius: 0.3rem;
+          object-fit: cover; }
+        main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex .hoverImgTarjetaProyectoIndex {
+          width: 100%;
+          height: 99.1%;
+          background-color: rgba(1, 1, 0, 0.8);
+          top: 0;
+          right: -100%;
+          position: absolute;
+          border-radius: 0.3rem;
+          display: flex;
+          align-items: end;
+          transition: 1s; }
+          main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex .hoverImgTarjetaProyectoIndex .contenedorInfoTarjetaProyectoIndex .tituloH3 {
+            font-size: 1.5rem;
+            color: #b4b4b4; }
+          main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex .hoverImgTarjetaProyectoIndex .contenedorInfoTarjetaProyectoIndex .textoH3 {
+            color: #b4b4b4;
+            font-size: 1.1rem;
+            font-weight: 500; }
+          main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex .hoverImgTarjetaProyectoIndex .contenedorInfoTarjetaProyectoIndex .paddingLeft2Rem {
+            padding-left: 2rem; }
+          main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex .hoverImgTarjetaProyectoIndex .contenedorInfoTarjetaProyectoIndex .paddingBottom2Rem {
+            padding-bottom: 2rem; }
+      main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .stopMarginBottom {
+        margin-bottom: 0; }
+
+@media screen and (min-width: 960px) {
+  main .contenedorProyectosIndex .contenedorColumnasProyectosIndex {
+    flex-wrap: nowrap; }
+    main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex {
+      max-width: 20rem; }
+      main .contenedorProyectosIndex .contenedorColumnasProyectosIndex .columnaProyectosIndex .tarjetaProyectoIndex:hover .hoverImgTarjetaProyectoIndex {
+        right: 0; } }
+
+footer {
+  width: 100%;
+  background-color: #505050;
+  margin-top: 2rem; }
+  footer .contenedorFooter {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    footer .contenedorFooter .columnaFooter {
+      width: 100%;
+      max-width: 20rem; }
+      footer .contenedorFooter .columnaFooter .tituloH2 {
+        color: #828282;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2rem;
+        text-align: center; }
+      footer .contenedorFooter .columnaFooter .colorActive {
+        color: #fafafa; }
+      footer .contenedorFooter .columnaFooter .contenedorSeparador {
+        width: 70%;
+        margin: 0 auto; }
+        footer .contenedorFooter .columnaFooter .contenedorSeparador .imgSeparador {
+          width: 100%; }
+      footer .contenedorFooter .columnaFooter .contenedorNavBarFooter {
+        margin: 1.5rem auto; }
+        footer .contenedorFooter .columnaFooter .contenedorNavBarFooter li {
+          list-style-type: none;
+          text-align: center; }
+          footer .contenedorFooter .columnaFooter .contenedorNavBarFooter li a {
+            text-decoration: none;
+            color: #828282;
+            font-size: 1.2rem; }
+            footer .contenedorFooter .columnaFooter .contenedorNavBarFooter li a:hover {
+              color: #b4b4b4;
+              text-decoration: underline; }
+            footer .contenedorFooter .columnaFooter .contenedorNavBarFooter li a:focus {
+              color: #1e1e1e;
+              text-decoration: underline; }
+            footer .contenedorFooter .columnaFooter .contenedorNavBarFooter li a.active {
+              color: #fafafa;
+              text-decoration: underline; }
+  footer .contenedorSeparador {
+    width: 70%;
+    max-width: 23rem;
+    margin: 0 auto; }
+    footer .contenedorSeparador .imgSeparador {
+      width: 100%; }
+  footer .paddingBottom2Rem {
+    padding-bottom: 2rem; }
+  footer .contenedorCopyFooter {
+    padding: 1.5rem 0; }
+    footer .contenedorCopyFooter .textoCopy {
+      color: #fafafa;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.1rem;
+      text-align: center; }
+
+@media screen and (min-width: 960px) {
+  footer {
+    display: flex;
+    flex-direction: column; }
+    footer .contenedorFooter {
+      padding: 2rem 0; }
+    footer .contenedorCopyFooter {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; } }
+
+main .tituloH1 {
+  margin: 1.5rem auto;
+  font-size: 2.5rem;
+  color: #828282;
+  text-align: center; }
+
+main .contenedorSeparador {
+  padding-top: 1.5rem;
+  width: 70%;
+  max-width: 26rem;
+  margin: 0 auto; }
+  main .contenedorSeparador .imgSeparador {
+    width: 100%; }
+
+main .switch180 {
+  transform: rotate(180deg);
+  padding-bottom: 1.5rem; }
+
+main .stopPadding-top {
+  padding-top: 0; }
+
+main .contenedorPerfil {
+  margin: 1.5rem auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 'FoPe' 'LoPe' 'BiPe' 'FAPe' 'EnPe' 'SOPe' 'SoPe' 'IdPe' 'InPe'; }
+  main .contenedorPerfil .contenedorFotoPerfil {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: FoPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorFotoPerfil .imgFotoPerfil {
+      width: 100%; }
+  main .contenedorPerfil .contenedorLogotipoPerfil {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: LoPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorLogotipoPerfil .imgLogotipoPerfil {
+      width: 100%; }
+  main .contenedorPerfil .contenedorBiografia {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: BiPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorBiografia .contenedorParrafoBiografiaPerfil {
+      width: 100%; }
+      main .contenedorPerfil .contenedorBiografia .contenedorParrafoBiografiaPerfil .ParrafoBiografiaPerfil {
+        color: #828282;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: justify; }
+  main .contenedorPerfil .contenedorFormacionAcademica {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: FAPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorFormacionAcademica .contenedorTituloH2 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorFormacionAcademica .contenedorTituloH2 .tituloH2 {
+        font-size: 2rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorFormacionAcademica .contenedorTituloH3 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorFormacionAcademica .contenedorTituloH3 .tituloH3 {
+        font-size: 1.5rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorFormacionAcademica .contenedorTextoH3 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorFormacionAcademica .contenedorTextoH3 .textoH3 {
+        font-size: 1.1rem;
+        color: #828282;
+        text-align: center; }
+  main .contenedorPerfil .contenedorEnfasis {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: EnPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorEnfasis .contenedorTituloH2 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorEnfasis .contenedorTituloH2 .tituloH2 {
+        font-size: 2rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorEnfasis .contenedorGrillas {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorEnfasis .contenedorGrillas .grillaX10 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+        main .contenedorPerfil .contenedorEnfasis .contenedorGrillas .grillaX10 .contenedorImgOrnamento {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 2/2; }
+          main .contenedorPerfil .contenedorEnfasis .contenedorGrillas .grillaX10 .contenedorImgOrnamento .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorEnfasis .contenedorGrillas .grillaX10 .contenedorTextoH3 {
+          grid-column: 4/10;
+          display: flex;
+          align-items: center; }
+          main .contenedorPerfil .contenedorEnfasis .contenedorGrillas .grillaX10 .contenedorTextoH3 .textoH3 {
+            font-size: 1.1rem;
+            color: #828282;
+            text-align: center; }
+  main .contenedorPerfil .contenedorSistemaOperativo {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: SOPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorSistemaOperativo .contenedorTituloH2 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorSistemaOperativo .contenedorTituloH2 .tituloH2 {
+        font-size: 2rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorTextoH3 {
+          grid-column: 2/5;
+          display: flex;
+          align-items: center; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorTextoH3 .textoH3 {
+            font-size: 1.1rem;
+            color: #828282;
+            text-align: center; }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 5/5; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 5/5; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP2 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 6/6; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP2 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP3 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 7/7; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP3 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP4 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 8/8; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP4 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP5 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 9/9; }
+          main .contenedorPerfil .contenedorSistemaOperativo .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP5 .imgOrnamento {
+            width: 100%; }
+    main .contenedorPerfil .contenedorSistemaOperativo .stopPadding-top {
+      padding-top: 0; }
+  main .contenedorPerfil .contenedorSoftware {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: SoPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorSoftware .contenedorTituloH2 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorSoftware .contenedorTituloH2 .tituloH2 {
+        font-size: 2rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorSoftware .contenedorGrillas {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+        main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorTextoH3 {
+          grid-column: 1/5;
+          display: flex;
+          align-items: center; }
+          main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorTextoH3 .textoH3 {
+            font-size: 1.1rem;
+            color: #828282;
+            text-align: center; }
+        main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 6/6; }
+          main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP2 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 7/7; }
+          main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP2 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP3 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 8/8; }
+          main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP3 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP4 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 9/9; }
+          main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP4 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP5 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 10/10; }
+          main .contenedorPerfil .contenedorSoftware .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP5 .imgOrnamento {
+            width: 100%; }
+    main .contenedorPerfil .contenedorSoftware .stopPadding-top {
+      padding-top: 0; }
+  main .contenedorPerfil .contenedorIdiomas {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: IdPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorIdiomas .contenedorTituloH2 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorIdiomas .contenedorTituloH2 .tituloH2 {
+        font-size: 2rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorIdiomas .contenedorGrillas {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+        main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorTextoH3 {
+          grid-column: 1/5;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorTextoH3 .textoH3 {
+            font-size: 1.1rem;
+            color: #828282;
+            text-align: center; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorTextoH3 .textoH32 {
+            font-size: 0.8rem;
+            color: #828282;
+            text-align: center; }
+        main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 6/6; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP1 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP2 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 7/7; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP2 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP3 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 8/8; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP3 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP4 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 9/9; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP4 .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP5 {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 10/10; }
+          main .contenedorPerfil .contenedorIdiomas .contenedorGrillas .grillaX10 .contenedorImgOrnamentoP5 .imgOrnamento {
+            width: 100%; }
+    main .contenedorPerfil .contenedorIdiomas .stopPadding-top {
+      padding-top: 0; }
+  main .contenedorPerfil .contenedorIntereses {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: InPe;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorPerfil .contenedorIntereses .contenedorTituloH2 {
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorIntereses .contenedorTituloH2 .tituloH2 {
+        font-size: 2rem;
+        color: #828282;
+        text-align: center; }
+    main .contenedorPerfil .contenedorIntereses .contenedorGrillas {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem; }
+      main .contenedorPerfil .contenedorIntereses .contenedorGrillas .grillaX10 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+        main .contenedorPerfil .contenedorIntereses .contenedorGrillas .grillaX10 .contenedorImgOrnamento {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 4/4; }
+          main .contenedorPerfil .contenedorIntereses .contenedorGrillas .grillaX10 .contenedorImgOrnamento .imgOrnamento {
+            width: 100%; }
+        main .contenedorPerfil .contenedorIntereses .contenedorGrillas .grillaX10 .contenedorTextoH3 {
+          grid-column: 6/10;
+          display: flex;
+          align-items: center; }
+          main .contenedorPerfil .contenedorIntereses .contenedorGrillas .grillaX10 .contenedorTextoH3 .textoH3 {
+            font-size: 1.1rem;
+            color: #828282;
+            text-align: center; }
+
+@media screen and (min-width: 480px) {
+  main .contenedorPerfil {
+    grid-template-areas: 'FoPe BiPe' 'EnPe FAPe' 'SOPe SoPe' 'IdPe InPe';
+    column-gap: 2rem; }
+    main .contenedorPerfil .contenedorLogotipoPerfil {
+      display: none; } }
+
+@media screen and (min-width: 960px) {
+  main .contenedorPerfil {
+    grid-template-areas: 'LoPe FoPe BiPe' 'FAPe SOPe IdPe' 'EnPe SoPe InPe';
+    column-gap: 4rem; }
+    main .contenedorPerfil .contenedorLogotipoPerfil {
+      display: grid; } }
+
+main .contenedorProyectosEnfasis {
+  margin: 1rem auto;
+  width: 100%; }
+  main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos {
+      margin: 2rem 1rem;
+      max-width: 20rem; }
+      main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos a .imgTarjetaProyectos {
+        width: 100%;
+        max-width: 20rem;
+        transition: transform 1s; }
+        main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos a .imgTarjetaProyectos:hover {
+          transform: translateY(-10%); }
+      main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos .tituloH2 {
+        font-size: 1.5rem;
+        color: #828282;
+        text-align: center;
+        margin-top: 1.5rem; }
+      main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos .textoH2 {
+        font-size: 1.4rem;
+        color: #828282;
+        text-align: center; }
+
+@media screen and (min-width: 480px) {
+  main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos .imgTarjetaProyectos {
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover; }
+  main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos .objectPositionBottom {
+    object-position: bottom; }
+  main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos .objectPositionLeft {
+    object-position: left; } }
+
+@media screen and (min-width: 960px) {
+  main .contenedorProyectosEnfasis .contenedorTarjetasEnfasis .tarjetaProyectos .imgTarjetaProyectos {
+    width: 26rem;
+    height: 26rem; } }
+
+main .contenedorFilasProyecto {
+  margin: 1rem auto;
+  width: 100%; }
+  main .contenedorFilasProyecto .filaProyecto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    main .contenedorFilasProyecto .filaProyecto .imgProyecto {
+      width: 100%;
+      height: 100%;
+      max-width: 20rem;
+      margin: 2rem 1rem; }
+
+main .contenedorContexto {
+  margin: 1.5rem auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 'EnPr' 'HePr' 'NoPr' 'CoPr'; }
+  main .contenedorContexto .contenedorEnfasisProyecto {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: EnPr;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorContexto .contenedorEnfasisProyecto .tituloH2 {
+      font-size: 2rem;
+      color: #828282;
+      text-align: center; }
+  main .contenedorContexto .contenedorHerramientaProyecto {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: HePr;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorContexto .contenedorHerramientaProyecto .tituloH2 {
+      padding-top: 1.5rem;
+      font-size: 2rem;
+      color: #828282;
+      text-align: center; }
+    main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem; }
+      main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+        main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 .contenedorImgOrnamento {
+          max-width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column: 2/2; }
+          main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 .contenedorImgOrnamento .imgOrnamento {
+            width: 100%; }
+        main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 .gridColumn3 {
+          grid-column: 3/3; }
+        main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 .contenedorTextoH2 {
+          grid-column: 4/10;
+          display: flex;
+          align-items: center; }
+          main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 .contenedorTextoH2 .textoH2 {
+            font-size: 1.1rem;
+            color: #828282;
+            text-align: center; }
+        main .contenedorContexto .contenedorHerramientaProyecto .contenedorGrillas .grillaX10 .gridColumn5 {
+          grid-column: 5/10; }
+    main .contenedorContexto .contenedorHerramientaProyecto .stopPadding-top {
+      padding-top: 0; }
+  main .contenedorContexto .contenedorNombreProyecto {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: NoPr;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorContexto .contenedorNombreProyecto .tituloH2 {
+      padding-top: 1.5rem;
+      font-size: 2rem;
+      color: #828282;
+      text-align: center; }
+    main .contenedorContexto .contenedorNombreProyecto .contenedorTextoH2 {
+      padding-top: 1.5rem; }
+      main .contenedorContexto .contenedorNombreProyecto .contenedorTextoH2 .textoH2 {
+        font-size: 1.1rem;
+        color: #828282;
+        text-align: center; }
+  main .contenedorContexto .contenedorContextoProyecto {
+    width: 100%;
+    max-width: 20rem;
+    grid-area: CoPr;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    main .contenedorContexto .contenedorContextoProyecto .contenedorTextoH2 {
+      padding-top: 1.5rem; }
+      main .contenedorContexto .contenedorContextoProyecto .contenedorTextoH2 .textoH2 {
+        color: #828282;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: justify; }
+
+@media screen and (min-width: 480px) {
+  main .contenedorContexto {
+    align-items: start;
+    grid-template-areas: 'EnPr HePr' 'NoPr CoPr';
+    column-gap: 2rem; } }
+
+@media screen and (min-width: 960px) {
+  main .contenedorFilasProyecto .filaProyecto .imgProyecto {
+    max-width: 30rem; }
+  main .contenedorFilasProyecto .filaProyecto .maxWidthX {
+    width: 40rem;
+    max-width: none; }
+  main .contenedorContexto {
+    column-gap: 4rem; } }
+
+main .contenedorContacto {
+  width: 100%; }
+  main .contenedorContacto .contenedorSliderInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem; }
+    main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto {
+      display: none; }
+    main .contenedorContacto .contenedorSliderInfo .infoContacto {
+      width: 100%;
+      max-width: 40rem; }
+      main .contenedorContacto .contenedorSliderInfo .infoContacto .contenedorInfo {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.5rem auto; }
+        main .contenedorContacto .contenedorSliderInfo .infoContacto .contenedorInfo .tituloH2 {
+          font-size: 2rem;
+          color: #828282;
+          text-align: center; }
+        main .contenedorContacto .contenedorSliderInfo .infoContacto .contenedorInfo .textoH2 {
+          font-size: 1.1rem;
+          color: #828282;
+          text-align: center; }
+
+@media screen and (min-width: 960px) {
+  main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto {
+    display: block;
+    width: 40rem;
+    height: 30rem;
+    padding: 3rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative; }
+    main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto:hover .contenedorImgsSlider {
+      animation-play-state: paused; }
+    main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2rem;
+      height: 100%;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), #1e1e1e);
+      content: '';
+      z-index: 5; }
+    main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2rem;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #1e1e1e);
+      content: '';
+      z-index: 5; }
+    main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto .contenedorImgsSlider {
+      animation: 35s slide infinite linear;
+      display: inline-block; }
+      main .contenedorContacto .contenedorSliderInfo .contenedorSliderContacto .contenedorImgsSlider .imgSliderContacto {
+        margin: 0 1rem;
+        height: 30rem; }
+  @keyframes slide {
+    from {
+      transform: translateX(0); }
+    to {
+      transform: translateX(-100%); } } }

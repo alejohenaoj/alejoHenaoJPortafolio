@@ -1,0 +1,40 @@
+main{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .contenedorIntro{
+    width: 100%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .tituloH1{
+      font-size: 2.5rem;
+      color: $grisMedio;
+      text-align: center;
+    }
+    .opacidadCero{
+      opacity: 0;
+      position: absolute;
+    }
+    .contenedorImgIsologoIntro{
+      width: 90%;
+      max-width: 40rem;
+      margin: 1rem auto;
+      .imgIsologoIntro{
+        width: 100%;
+      }
+    }
+    .contenedorSeparador{
+      width: 70%;
+      max-width: 23rem;
+      margin: 0 auto;
+      .imgSeparador{
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,512 @@
+main{
+  .tituloH1{
+    margin: 1.5rem auto;
+    font-size: 2.5rem;
+    color: $grisMedio;
+    text-align: center;
+  }
+  .contenedorSeparador{
+    padding-top: 1.5rem;
+    width: 70%;
+    max-width: 26rem;
+    margin: 0 auto;
+    .imgSeparador{
+      width: 100%;
+    }
+  }
+  .switch180{
+    transform: rotate(180deg);
+    padding-bottom: 1.5rem;
+  }
+  .stopPadding-top{
+    padding-top: 0;
+  }
+  .contenedorPerfil{
+    margin: 1.5rem auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'FoPe'
+    'LoPe'
+    'BiPe'
+    'FAPe'
+    'EnPe'
+    'SOPe'
+    'SoPe'
+    'IdPe'
+    'InPe';
+    .contenedorFotoPerfil{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: FoPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .imgFotoPerfil{
+        width: 100%;
+      }
+    }
+    .contenedorLogotipoPerfil{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: LoPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .imgLogotipoPerfil{
+        width: 100%;
+      }
+    }
+    .contenedorBiografia{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: BiPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorParrafoBiografiaPerfil{
+        width: 100%;
+        .ParrafoBiografiaPerfil{
+          color: $grisMedio;
+          font-size: 1.1rem;
+          font-weight: 500;
+          text-align: justify;
+        }
+      }
+    }
+    .contenedorFormacionAcademica{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: FAPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorTituloH2{
+        padding-top: 1.5rem;
+        .tituloH2{
+          font-size: 2rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorTituloH3{
+        padding-top: 1.5rem;
+        .tituloH3{
+          font-size: 1.5rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorTextoH3{
+        padding-top: 1.5rem;
+        .textoH3{
+          font-size: 1.1rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+    }
+    .contenedorEnfasis{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: EnPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorTituloH2{
+        padding-top: 1.5rem;
+        .tituloH2{
+          font-size: 2rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorGrillas{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .grillaX10{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          .contenedorImgOrnamento{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2/2;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorTextoH3{
+            grid-column: 4/10;
+            display: flex;
+            align-items: center;
+            .textoH3{
+              font-size: 1.1rem;
+              color: $grisMedio;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .contenedorSistemaOperativo{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: SOPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorTituloH2{
+        padding-top: 1.5rem;
+        .tituloH2{
+          font-size: 2rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorGrillas{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .grillaX10{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          .contenedorTextoH3{
+            grid-column: 2/5;
+            display: flex;
+            align-items: center;
+            .textoH3{
+              font-size: 1.1rem;
+              color: $grisMedio;
+              text-align: center;
+            }
+          }
+          .contenedorImgOrnamentoP1{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 5/5;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP1{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 5/5;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP2{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 6/6;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP3{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 7/7;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP4{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 8/8;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP5{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 9/9;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .stopPadding-top{
+        padding-top: 0;
+      }
+    }
+    .contenedorSoftware{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: SoPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorTituloH2{
+        padding-top: 1.5rem;
+        .tituloH2{
+          font-size: 2rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorGrillas{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .grillaX10{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          .contenedorTextoH3{
+            grid-column: 1/5;
+            display: flex;
+            align-items: center;
+            .textoH3{
+              font-size: 1.1rem;
+              color: $grisMedio;
+              text-align: center;
+            }
+          }
+          .contenedorImgOrnamentoP1{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 6/6;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP2{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 7/7;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP3{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 8/8;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP4{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 9/9;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP5{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 10/10;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .stopPadding-top{
+        padding-top: 0;
+      }
+    }
+    .contenedorIdiomas{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: IdPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorTituloH2{
+        padding-top: 1.5rem;
+        .tituloH2{
+          font-size: 2rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorGrillas{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .grillaX10{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          .contenedorTextoH3{
+            grid-column: 1/5;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .textoH3{
+              font-size: 1.1rem;
+              color: $grisMedio;
+              text-align: center;
+            }
+            .textoH32{
+              font-size: 0.8rem;
+              color: $grisMedio;
+              text-align: center;
+            }
+          }
+          .contenedorImgOrnamentoP1{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 6/6;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP2{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 7/7;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP3{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 8/8;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP4{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 9/9;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorImgOrnamentoP5{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 10/10;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .stopPadding-top{
+      padding-top: 0;
+      }
+    }
+    .contenedorIntereses{
+      width: 100%;
+      max-width: 20rem;
+      grid-area: InPe;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .contenedorTituloH2{
+        padding-top: 1.5rem;
+        .tituloH2{
+          font-size: 2rem;
+          color: $grisMedio;
+          text-align: center;
+        }
+      }
+      .contenedorGrillas{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .grillaX10{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          .contenedorImgOrnamento{
+            max-width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 4/4;
+            .imgOrnamento{
+              width: 100%;
+            }
+          }
+          .contenedorTextoH3{
+            grid-column: 6/10;
+            display: flex;
+            align-items: center;
+            .textoH3{
+              font-size: 1.1rem;
+              color: $grisMedio;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width:480px){
+  main{
+    .contenedorPerfil{
+      grid-template-areas: 'FoPe BiPe'
+      'EnPe FAPe'
+      'SOPe SoPe'
+      'IdPe InPe';
+      column-gap: 2rem;
+      .contenedorLogotipoPerfil{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and(min-width:960px){
+  main{
+    .contenedorPerfil{
+      grid-template-areas: 'LoPe FoPe BiPe'
+      'FAPe SOPe IdPe'
+      'EnPe SoPe InPe';
+      column-gap: 4rem;
+      .contenedorLogotipoPerfil{
+        display: grid;
+      }
+    }
+  }
+}
